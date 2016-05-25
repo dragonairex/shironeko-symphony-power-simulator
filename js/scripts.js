@@ -86,7 +86,7 @@ var symphApp=(function () {
 			$("#plus2").fadeIn(200).fadeTo(500,1).fadeOut(100);		
 		},
 		poyon:function(){
-			$("#con2").stop().animate({"top":"20px"},400).animate({"top":"0px"},100).animate({"top":"10px"},100).animate({"top":"3px"},100).animate({"top":"7px"},100).animate({"top":"5px"},100,function(){setTimeout("symphApp.poyon()",3000)});
+			//$("#con2").stop().animate({"top":"20px"},400).animate({"top":"0px"},100).animate({"top":"10px"},100).animate({"top":"3px"},100).animate({"top":"7px"},100).animate({"top":"5px"},100,function(){setTimeout("symphApp.poyon()",3000)});
 		}
 	};
 })();
@@ -108,17 +108,13 @@ $(document).ready(function (){
 	$("#con").on("mousedown", function(){
 		if (Math.floor(Math.random()*100)==0) $("#button2 .icon").addClass("neta");
 		$("#con").stop().fadeOut("fast");
-		$("#button1").stop().fadeIn("fast");
-		$("#button2").stop().fadeIn("fast");
-		$("#button3").stop().fadeIn("fast");
+		$(".b0wrap").stop().fadeIn("fast");
 		$("#back2").stop().fadeIn("fast");
 		
 	});
 	$("#left").on("mouseup", function(){
 		$("#con").stop().fadeIn();
-		$("#button1").stop().fadeOut("fast");
-		$("#button2").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
-		$("#button3").stop().fadeOut("fast");
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
 		$("#back2").stop().fadeOut("fast");
 	});
 });
