@@ -95,10 +95,11 @@ ul li img {
 }
 #detail {
   margin: 5px 12px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2em;
-  padding: 5px 45px;
+  padding: 5px 10px;
   border: 3px double #DBA45D;
+  text-align: center;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ã€€LEFT
@@ -502,6 +503,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
   margin: 10px 12px;
   line-height: 1.5em;
   padding: 15px 45px;
+  text-align:left;
+  padding-left:45px;
+  padding-right:45px;
   }
   #title{
   width: 280px;
