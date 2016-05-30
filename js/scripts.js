@@ -9,10 +9,10 @@ var symphApp=(function () {
 			this.pWidth=$("#power1").width();
 			this.tWidth=$("#time1").width();
 			this.pTop=$("#plus1").position().top;
-			this.poyon();
+			//this.poyon();
 		},
 		tDep:function(){
-			$("#time2").width(this.t*(this.tWidth)/60000);
+			$("#time2").width(this.t/600+"%");
 			$("#time0").text(("0"+(this.t/1000).toFixed(1)).slice (-4));
 			if (this.t>=this.depInterval) {
 				this.t-=this.depInterval;
@@ -62,7 +62,7 @@ var symphApp=(function () {
 			if (this.t) stopped=false;
 			this.t+=y;
 			if (this.t>60000)this.t=60000;
-			$("#time2").width(this.t*(this.tWidth)/60000);
+			$("#time2").width(this.t/600+"%");
 			$("#time0").text(("0"+(this.t/1000).toFixed(1)).slice (-4));
 			if(stopped) {
 				setTimeout("symphApp.tDep()",this.depInterval);
@@ -70,7 +70,8 @@ var symphApp=(function () {
 				$("#powerLabel").fadeIn("fast");
 			}
 			
-			$("#power2").width(this.p*(this.pWidth)/10);
+			$("#power2").width(this.p*10+"%");
+			//$("#power2").width(this.p*(this.pWidth)/10);
 			$("#effect1").text(this.p*5);
 			$("#effect2").text(this.p*5);
 			$("#effect3").text(this.p*2);
