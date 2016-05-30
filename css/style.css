@@ -109,6 +109,7 @@ ul li img {
 }
 .right{
   background-color: #FFF3C9;
+  /* height: 300px; */
 }
 #left {
   /* float:left; */
@@ -255,18 +256,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 #button4 {
   position: absolute;
-  top: 259px;
-  left: 185px;
+  top: 10px;
+  right: 10px;
   width: 50px;
-  height: 20px;
+  height: 30px;
   border-radius: 7px;
   box-shadow: 0px 2px 2px #585858;
   text-align: center;
   /* padding-top: 7px; */
-  line-height: 22px;
+  line-height: 30px;
   cursor: pointer;
   font-weight: 900;
-  color: #333;
+  color: #FFF;
+  text-shadow: 0 0 2px #676767;
   display:none;
   background-color: #26C526;
   background: rgb(207,249,204);
@@ -507,6 +509,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
     margin-top:20px;
     margin-bottom:30px;
   }
+  .right{height:300px;}
   #detail {
   margin: 10px 12px;
   line-height: 1.5em;
