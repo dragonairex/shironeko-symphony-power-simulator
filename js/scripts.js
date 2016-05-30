@@ -118,4 +118,30 @@ $(document).ready(function (){
 		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
 		$("#back2").stop().fadeOut("fast");
 	});
+
+	/*mobile*/
+		$("#con").on("tap", function(){
+		if (Math.floor(Math.random()*100)==0) $("#button2 .icon").addClass("neta");
+		$("#con").stop().fadeOut("fast");
+		$(".b0wrap").stop().fadeIn("fast");
+		$("#back2").stop().fadeIn("fast");
+	});
+	$("#button1").on("tap",function(){
+		symphApp.pAdd(1,10000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
+	});
+	$("#button2").on("tap",function(){
+		symphApp.pAdd(2.5,15000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
+	});
+	$("#button3").on("tap",function(){
+		symphApp.pAdd(0.5,10000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
+	});
 });
