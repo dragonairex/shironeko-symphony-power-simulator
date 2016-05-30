@@ -95,7 +95,7 @@ ul li img {
 }
 #detail {
   margin: 5px 12px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2em;
   padding: 5px 45px;
   border: 3px double #DBA45D;
@@ -296,6 +296,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAacAAACRCAMA
 }
 .redStat {
   color: #C51639;
+  font-size:14px;
 }
 #power1 {
   /*position: absolute;
@@ -511,4 +512,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
   top: -10px;
   left: 45px;
   }
+  .redStat {
+  font-size:inherit;
+}
 }
