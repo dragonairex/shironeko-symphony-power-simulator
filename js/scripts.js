@@ -120,7 +120,7 @@ $(document).ready(function (){
 	});
 
 	/*mobile*/
-		$("#con").on("tap", function(){
+		$("#con").on("taphold", function(){
 		if (Math.floor(Math.random()*100)==0) $("#button2 .icon").addClass("neta");
 		$("#con").stop().fadeOut("fast");
 		$(".b0wrap").stop().fadeIn("fast");
