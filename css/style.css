@@ -499,6 +499,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 }
 .bottom,.bottom p{
   text-align: right;
+  font-size: 12px;
 }
 @media (min-width:768px) {
   #time1,#power1,.powerBg{
@@ -535,4 +536,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
   font-size:inherit;
   }
   .top3{display:none;}
+  .break{display:none;}
 }
