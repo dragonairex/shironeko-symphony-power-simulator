@@ -96,17 +96,27 @@ $(document).ready(function (){
 	symphApp.init();
 	$("#button1").on("mouseup",function(){
 		symphApp.pAdd(1,10000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
 	});
 	$("#button2").on("mouseup",function(){
 		symphApp.pAdd(2.5,15000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
 	});
 	$("#button3").on("mouseup",function(){
 		symphApp.pAdd(0.5,10000);
+				$("#con").stop().fadeIn();
+		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
+		$("#back2").stop().fadeOut("fast");
 	});
 	$("#button4").click(function(){
 		symphApp.reset();
 	});
 	$("#con").on("mousedown", function(){
+		console.log("mousedown");
 		if (Math.floor(Math.random()*100)==0) $("#button2 .icon").addClass("neta");
 		$("#con").stop().fadeOut("fast");
 		$(".b0wrap").stop().fadeIn("fast");
@@ -114,13 +124,12 @@ $(document).ready(function (){
 		
 	});
 	$("#left").on("mouseup", function(){
-		$("#con").stop().fadeIn();
-		$(".b0wrap").stop().fadeOut("fast",function(){$("#button2 .icon").removeClass("neta");});
-		$("#back2").stop().fadeOut("fast");
+
 	});
 
 	/*mobile*/
-		$("#con").on("taphold", function(){
+		$("#con").on("tap", function(){
+			console.log('tap');
 		if (Math.floor(Math.random()*100)==0) $("#button2 .icon").addClass("neta");
 		$("#con").stop().fadeOut("fast");
 		$(".b0wrap").stop().fadeIn("fast");
