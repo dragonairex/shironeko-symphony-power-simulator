@@ -84,7 +84,7 @@ var symphApp=(function () {
 			$("#plus1").stop().css({"top":temp});
 			$("#plus2").stop(true,true).hide();
 			$("#plus1").animate({"top":"140px"},200);
-			$("#plus2").fadeIn(200).fadeTo(500,1).fadeOut(100);		
+			$("#plus2").fadeIn(200).fadeTo(1500,1).fadeOut(300);		
 		},
 		poyon:function(){
 			//$("#con2").stop().animate({"top":"20px"},400).animate({"top":"0px"},100).animate({"top":"10px"},100).animate({"top":"3px"},100).animate({"top":"7px"},100).animate({"top":"5px"},100,function(){setTimeout("symphApp.poyon()",3000)});
